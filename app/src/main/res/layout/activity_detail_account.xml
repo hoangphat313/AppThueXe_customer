@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background2"
+    tools:context=".activity.DetailAccountActivity">
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_arrow_back_black"
+        android:background="@null"
+        android:layout_gravity="start"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avataruser"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/img_avatardefault"/>
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:singleLine="true"
+                        android:text="Tên người dùng"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_updateinforuer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Tài khoản của tôi"
+        android:drawableStart="@drawable/ic_user"
+        android:drawableEnd="@drawable/ic_arrow_forward_right"
+        android:background="@drawable/border_bottom_grey3"
+        android:drawablePadding="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_ordering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Đơn đang thuê"
+        android:drawableStart="@drawable/ic_car_crash"
+        android:drawableEnd="@drawable/ic_arrow_forward_right"
+        android:background="@drawable/border_bottom_grey3"
+        android:drawablePadding="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_historyorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Lịch sử thuê xe"
+        android:drawableStart="@drawable/ic_history"
+        android:drawableEnd="@drawable/ic_arrow_forward_right"
+        android:background="@drawable/border_bottom_grey3"
+        android:drawablePadding="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_signout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="Đăng xuất"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:drawableStart="@drawable/ic_signout"
+                android:drawablePadding="10dp"/>
+</LinearLayout>
